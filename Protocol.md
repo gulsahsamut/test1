@@ -37,19 +37,27 @@
 * Member can update the cheese stack after doing the proof of work .which will be broadcasted to other members on the network.
 * Each member of the network agrees on the protocol of the longest valid cheese stack.
 * The member program accept and share information (download and upload) at the same time.
-
+* If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
 
 ## Interaction between Members
 * The members gets the sublist from the tracker and connects to the members and their connection is established through TCP connection
 * Member requests for a the cheese to other member
 ```sh
 	Request: [cheese]
-	Response: [Parent Smell,Sequence Number,Smell,Unit of Information,Nounce]
+	Response: [Parent_Smell,Sequence_Number,Smell,Unit_of_Information,Nounce]
 ```
-
-
 * A new member gets a copy a latest valid cheese stack and it gets stored in the hard disk.
-* If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
+* The valid cheese is added to the cheese stack and this cheese stack is validated by the inbuilt function in member program and only longest cheese stack is valid as a global protocol to be followed.
+* The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every member that doesn’t have the latest copy of cheese stack.
+
+##Blue-Cheese
+| Sequence | 0 |
+| Smell | SHA1 hash of unit of information|
+| Unit_of_Information | Information about transaction of cheese coin |
+| Nounce | Random number to validate the cheese |
+
+
+
 
 
 

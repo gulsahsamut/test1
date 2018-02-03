@@ -9,7 +9,7 @@
 4. [Interaction Between Members](#interaction-between-members)
 5. [Blue-Cheese](#blue-cheese)
 6. [Cheese](#cheese)
-7. [Cheese Stack](#cheese-stack)
+7. [Cheese-Stack](#cheese-stack)
 8. [Proof-Of-Work](#proof-of-work)
 
 ## Tracker Program
@@ -81,7 +81,7 @@
 | Unit_of_Information | Information about the transaction of cheese-coin system |
 | Nonce | Random number to validate the cheese, which generates the smell starting with two zeros |
 
-## Cheese Stack
+## Cheese-Stack
 * It is a collection of Cheese items
 * Chees Stack can be represented as follows,
 
@@ -94,7 +94,8 @@
 | Cheese_n |
 
 ## Proof-Of-Work
-
+* It is a procedure to validate a cheese upon previous valid cheese in the cheese-stack
+* This process is carried out by finding a correct nonce for the unit_of_information so that the hash of the smell starts with 00 (two zeros)
 
 
 

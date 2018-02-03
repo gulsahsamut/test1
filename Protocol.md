@@ -44,21 +44,41 @@
 * Member requests for a the cheese to other member
 ```sh
 	Request: [cheese]
-	Response: [Parent_Smell,Sequence_Number,Smell,Unit_of_Information,Nounce]
+	Response: [Parent_Smell,Sequence_Number,Smell,Unit_of_Information,Nonce]
 ```
 * A new member gets a copy a latest valid cheese stack and it gets stored in the hard disk.
 * The valid cheese is added to the cheese stack and this cheese stack is validated by the inbuilt function in member program and only longest cheese stack is valid as a global protocol to be followed.
 * The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every member that doesn’t have the latest copy of cheese stack.
 
 ## Blue-Cheese
+* It is the original cheese with following contents,
 | Contents | Meaning |
 | ---------|---------|
-| Sequence | 0 |
-| Smell | SHA1 hash of unit of information|
-| Unit_of_Information | Information about transaction of cheese coin |
-| Nounce | Random number to validate the cheese |
+| Sequence | 0 as predefined value |
+| Smell | SHA1 hash generated from the unit of information|
+| Unit_of_Information | Information about the transaction of cheese-coin system |
+| Nonce | Random number to validate the cheese, which generates the smell starting with two zeros |
 
+## Cheese
+* It is a unit of information stored in a distributed database and which is shared between the members in the network
+* A cheese contents following Information,
+| Contents | Meaning |
+| ---------|---------|
+| Parent_Smell | The hash of the parent chesse or the smell of previous cheese|
+| Sequence_Number | Unique number representing the number of ancestors |
+| Smell | SHA1 hash generated from the unit of information |
+| Unit_of_Information | Information about the transaction of cheese-coin system |
+| Nonce | Random number to validate the cheese, which generates the smell starting with two zeros |
 
+## Cheese Stack
+* It is a collection of Cheese items
+* Chees Stack can be represented as follows,
+| Cheese_Stack |
+|--------------|
+| Cheese_1 |
+| Cheese_2 |
+| Cheese_3 |
+| Cheese_n |
 
 
 

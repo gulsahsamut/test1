@@ -50,7 +50,7 @@
 * The valid cheese is added to the cheese stack and this cheese stack is validated by the inbuilt function in member program and only longest cheese stack is valid as a global protocol to be followed.
 * The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every member that doesn’t have the latest copy of cheese stack.
 
-##Blue-Cheese
+## Blue-Cheese
 | Contents | Meaning |
 | ---------|---------|
 | Sequence | 0 |

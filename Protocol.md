@@ -26,8 +26,8 @@
 | IP, Port| IP, Port |
  -->
 	
-	Request: Member IP address, Port number
-	Response: Member IP address, Port number
+	Request: [ <Member IP address>, <Port number>]
+	Response: [<Member IP address>, <Port number>]
 	
 
 

@@ -21,7 +21,6 @@
 			* Total number of active connections
 * Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members
 
-	
 Request: [IP address, Port number]
 Response: [Member IP address, Port number]
 	

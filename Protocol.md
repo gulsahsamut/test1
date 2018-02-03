@@ -1,7 +1,7 @@
 # BlockChain Protocol
 
 # Table of contents
-1. [Tracker](#A)
+1. [A](#A)
 
 ## Tracker
 * A tracker is a server in this peer - peer network

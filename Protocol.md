@@ -19,15 +19,11 @@
 			* Member IP address
 			* Member port number
 			* Total number of active connections
-* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active member
-<!-- 
-| Request | Response |
-| --------| -------- |
-| IP, Port| IP, Port |
- -->
+* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members
+
 	
-	Request: [ <Member IP address>, <Port number>]
-	Response: [<Member IP address>, <Port number>]
+	Request: [IP address, Port number]
+	Response: [Member IP address, Port number]
 	
 
-
+* Tracker sends a ping 

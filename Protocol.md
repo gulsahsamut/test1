@@ -41,8 +41,20 @@
 
 ## Interaction between Members
 * The members gets the sublist from the tracker and connects to the members and their connection is established through TCP connection
+* Member requests for a the cheese to other member
+```sh
+	Request: [cheese]
+	Response: [Parent Smell,
+				Sequence Number,
+				Smell,
+				Unit of Information,
+				Nounce]
+```
+
+
 * A new member gets a copy a latest valid cheese stack and it gets stored in the hard disk.
 * If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
+
 
 
 

@@ -66,7 +66,7 @@
 
 | Contents | Meaning |
 | ---------|---------|
-| Parent_Smell | The hash of the parent chesse or the smell of previous cheese|
+| Parent_Smell | The hash of the parent chesse or the smell of the previous cheese|
 | Sequence_Number | Unique number representing the number of ancestors |
 | Smell | SHA1 hash generated from the unit of information |
 | Unit_of_Information | Information about the transaction of cheese-coin system |
@@ -78,6 +78,7 @@
 
 | Cheese_Stack |
 |--------------|
+| Blue_Cheese |
 | Cheese_1 |
 | Cheese_2 |
 | Cheese_3 |

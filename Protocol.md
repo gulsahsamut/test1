@@ -12,13 +12,18 @@
 ## Tracker - Member
 * A tracker-member connection is a TCP connection
 * The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
-	* Display message from the server
-		* Waiting for connection.
+	* Display message from the server before new connections
+		* Tracker waiting for new connection.
 	* When new member gets connected to the tracker
 		* It displays,
 			* Member IP address
 			* Member port number
-			* Total number of active connection
+			* Total number of active connections
+* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active member
+
+| Request | Response |
+| --------| -------- |
+| IP, Port| IP, Port |
 
 
 

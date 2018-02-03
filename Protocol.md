@@ -1,4 +1,6 @@
-# BlockChain Protocol
+# Peer to Peer BlockChain Protocol
+
+This is the protocol for the implementation of peer to peer blockchain with proof-of-work
 
 # Table of contents
 1. [A](#A)
@@ -11,6 +13,15 @@
 	* Tracker sends a sublist of the other members that are active and waiting for connection to other members. 
 	* The tracker sends a random list of active members connected to it, if there are less than 10 active members.
 	* If the number of active members connected to the tracker is greater than 10 then the tracker sends the sublist  that contains at most 10 active members to connect with. 
+
+## Member Program
+* The member gets a sub-list of the peers from the tracker and it gets connected to them and if someone leaves it will get updated automatically
+* Member program will be awaiting for connections from other members
+* Each member has a copy of cheese stack stored in its hard disk
+* Member can update the cheese stack after doing the proof of work .which will be broadcasted to other members on the network.
+* Each member of the network agrees on the protocol of the longest valid cheese stack.
+* The member program accept and share information (download and upload) at the same time.
+* If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
 
 ## Interaction between Tracker and Member Programs
 * A tracker-member connection is a TCP connection
@@ -30,20 +41,11 @@
 ```
 * Tracker removes the members from its list if the members are inactive 
 
-## Member Program
-* The member gets a sub-list of the peers from the tracker and it gets connected to them and if someone leaves it will get updated automatically
-* Member program will be awaiting for connections from other members
-* Each member has a copy of cheese stack stored in its hard disk
-* Member can update the cheese stack after doing the proof of work .which will be broadcasted to other members on the network.
-* Each member of the network agrees on the protocol of the longest valid cheese stack.
-* The member program accept and share information (download and upload) at the same time.
-* If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
-
-## Interaction between Members
+## Interaction Between Members
 * The members gets the sublist from the tracker and connects to the members and their connection is established through TCP connection
 * Member requests for a the cheese to other member
 ```sh
-	Request: [cheese]
+	Request: [Cheese]
 	Response: [Parent_Smell,Sequence_Number,Smell,Unit_of_Information,Nonce]
 ```
 * A new member gets a copy a latest valid cheese stack and it gets stored in the hard disk.
@@ -84,6 +86,7 @@
 | Cheese_3 |
 | Cheese_n |
 
+## Proof-of-work
 
 
 

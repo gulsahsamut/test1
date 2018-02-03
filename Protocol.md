@@ -25,7 +25,7 @@
 | --------| -------- |
 | IP, Port| IP, Port |
  -->
-	*```sh
+	```sh
 	Request: Member IP address, Port number
 	Response: Member IP address, Port number
 	```

@@ -1,9 +1,9 @@
 # Peer to Peer BlockChain Protocol
 
-This is the protocol for the implementation of peer to peer blockchain with proof-of-work
+**This is the protocol for the implementation of peer to peer blockchain with proof-of-work.**
 
 # Table of contents
-1. [A](#A)
+1. [Tracker Program](#tracker-program)
 
 ## Tracker Program
 * A tracker is a server in this peer - peer network

@@ -1,5 +1,8 @@
 # BlockChain Protocol
 
+# Table of contents
+1. [Tracker](#Tracker)
+
 ## Tracker
 * A tracker is a server in this peer - peer network
 * The tracker keeps track of IP address of the active members and their port number
@@ -24,5 +27,5 @@
 ```sh
 	Request: [IP address, Port number]
 	Response: [Member IP address, Port number]
-```
+``
 * Tracker sends a ping 

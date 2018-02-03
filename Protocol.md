@@ -44,7 +44,7 @@
 * Member requests for a the cheese to other member
 ```sh
 	Request: [cheese]
-	Response: [Parent Smell,
+	Response: [	Parent Smell,
 				Sequence Number,
 				Smell,
 				Unit of Information,

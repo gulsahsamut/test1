@@ -95,7 +95,7 @@
 
 ## Proof-Of-Work
 * It is a procedure to validate a cheese upon previous valid cheese in the cheese-stack
-* This process is carried out by finding a correct nonce for the unit_of_information so that the hash of the smell starts with 00 (two zeros)
+* This process is carried out by finding a correct nonce for the unit_of_information in the cheese so that the hash of the smell starts with 00 (two zeros)
 
 
 

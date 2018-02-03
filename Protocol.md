@@ -1,7 +1,7 @@
 # BlockChain Protocol
 
 # Table of contents
-1. [Tracker](#Tracker)
+1. [Tracker](#A)
 
 ## Tracker
 * A tracker is a server in this peer - peer network
@@ -27,5 +27,38 @@
 ```sh
 	Request: [IP address, Port number]
 	Response: [Member IP address, Port number]
-``
-* Tracker sends a ping 
+```
+* Tracker sends a ping * A tracker-member connection is a TCP connection
+* The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
+	* Display message from the server before new connections
+		* Tracker waiting for new connection.
+	* When new member gets connected to the tracker
+		* It displays,
+			* Member IP address
+			* Member port number
+			* Total number of active connections
+* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members
+
+## A
+* Tracker sends a ping * A tracker-member connection is a TCP connection
+* The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
+	* Display message from the server before new connections
+		* Tracker waiting for new connection.
+	* When new member gets connected to the tracker
+		* It displays,
+			* Member IP address
+			* Member port number
+			* Total number of active connections
+* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members
+
+## B
+* Tracker sends a ping * A tracker-member connection is a TCP connection
+* The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
+	* Display message from the server before new connections
+		* Tracker waiting for new connection.
+	* When new member gets connected to the tracker
+		* It displays,
+			* Member IP address
+			* Member port number
+			* Total number of active connections
+* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members

@@ -5,7 +5,12 @@
 # Table of contents
 1. [Tracker Program](#tracker-program)
 2. [Member Program](#member-program)
-3. [Cheese](#cheese)
+3. [Interaction Between Tracker and Member Programs](#Interaction-Between-Tracker-and-Member-Programs)
+4. [Interaction Between Members](#Interaction-Between-Members)
+5. [Blue-Cheese](#Blue-Cheese)
+6. [Cheese](#cheese)
+7. [Cheese Stack](#Cheese-Stack)
+8. [Proof-Of-Work](#Proof-Of-Work)
 
 ## Tracker Program
 * A tracker is a server in this peer - peer network
@@ -88,7 +93,7 @@
 | Cheese_3 |
 | Cheese_n |
 
-## Proof-of-work
+## Proof-Of-Work
 
 
 

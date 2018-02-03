@@ -51,6 +51,7 @@
 * The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every member that doesn’t have the latest copy of cheese stack.
 
 ##Blue-Cheese
+
 | Sequence | 0 |
 | Smell | SHA1 hash of unit of information|
 | Unit_of_Information | Information about transaction of cheese coin |

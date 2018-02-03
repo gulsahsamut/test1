@@ -52,6 +52,7 @@
 
 ## Blue-Cheese
 * It is the original cheese with following contents,
+
 | Contents | Meaning |
 | ---------|---------|
 | Sequence | 0 as predefined value |
@@ -62,6 +63,7 @@
 ## Cheese
 * It is a unit of information stored in a distributed database and which is shared between the members in the network
 * A cheese contents following Information,
+
 | Contents | Meaning |
 | ---------|---------|
 | Parent_Smell | The hash of the parent chesse or the smell of previous cheese|
@@ -73,6 +75,7 @@
 ## Cheese Stack
 * It is a collection of Cheese items
 * Chees Stack can be represented as follows,
+
 | Cheese_Stack |
 |--------------|
 | Cheese_1 |

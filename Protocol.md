@@ -4,6 +4,8 @@
 
 # Table of contents
 1. [Tracker Program](#tracker-program)
+2. [Member Program](#member-program)
+3. [Interaction Between Tracker and Member Programs](interaction_between_tracker_and_member_programs)
 
 ## Tracker Program
 * A tracker is a server in this peer - peer network
@@ -23,7 +25,7 @@
 * The member program accept and share information (download and upload) at the same time.
 * If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
 
-## Interaction between Tracker and Member Programs
+## Interaction Between Tracker and Member Programs
 * A tracker-member connection is a TCP connection
 * The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
 	* Display message from the server before new connections

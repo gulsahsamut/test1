@@ -5,7 +5,7 @@
 # Table of contents
 1. [Tracker Program](#tracker-program)
 2. [Member Program](#member-program)
-3. [Interaction Between Tracker and Member Programs](interaction_between_tracker_and_member_programs)
+3. [Interaction Between Tracker and Member Programs](interaction-between-tracker-and-member-programs)
 
 ## Tracker Program
 * A tracker is a server in this peer - peer network

@@ -33,7 +33,7 @@
 ## Interaction Between Tracker and Member Programs
 * A tracker-member connection is a TCP connection
 * The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
-	* Display message from the server before new connections
+	* Display message from the tracker before new connections
 		* Tracker waiting for new connection.
 	* When new member gets connected to the tracker
 		* It displays,
@@ -55,7 +55,7 @@
 	Request: [Cheese]
 	Response: [Parent_Smell,Sequence_Number,Smell,Unit_of_Information,Nonce]
 ```
-* A new member gets a copy a latest valid cheese stack and it gets stored in the hard disk.
+* A new member gets a copy of the latest valid cheese stack and it gets stored in the hard disk.
 * The valid cheese is added to the cheese stack and this cheese stack is validated by the inbuilt function in member program and only longest cheese stack is valid as a global protocol to be followed.
 * The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every member that doesn’t have the latest copy of cheese stack.
 

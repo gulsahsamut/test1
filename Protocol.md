@@ -3,7 +3,7 @@
 # Table of contents
 1. [Tracker](#A)
 
-## Tracker
+## [Tracker](#A)
 * A tracker is a server in this peer - peer network
 * The tracker keeps track of IP address of the active members and their port number
 * The  members connect to the tracker with respect to the port number and IP address of the tracker (where the tracker process is actively running).

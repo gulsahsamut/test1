@@ -3,7 +3,7 @@
 # Table of contents
 1. [Tracker](#A)
 
-## [Tracker](#A)
+## Tracker
 * A tracker is a server in this peer - peer network
 * The tracker keeps track of IP address of the active members and their port number
 * The  members connect to the tracker with respect to the port number and IP address of the tracker (where the tracker process is actively running).
@@ -39,7 +39,7 @@
 			* Total number of active connections
 * Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members
 
-## A
+## [A](#A)
 * Tracker sends a ping * A tracker-member connection is a TCP connection
 * The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
 	* Display message from the server before new connections

@@ -28,11 +28,11 @@
 ## Member Program
 * A member gets a sub-list of the peers(other members) from the tracker and it gets connected to them and it will get updated automatically if anyother peers disconnects from the network.
 * Member program will be awaiting for connections from other members
-* Each member has a copy of [cheese-stack](#cheese-stack) stored in its hard disk
-* Member can update the cheese stack after doing the proof of work .which will be broadcasted to other members on the network.
-* Each member of the network agrees on the protocol of the longest valid cheese stack.
-* The member program accept and share information (download and upload) at the same time.
-* If a member creates new cheese, it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it valid cheese. 
+* Each member has a copy of [cheese-stack](#cheese-stack) stored in its hard disk.
+* Member can update the cheese-stack after doing the [proof of work](#proof-of-work).which will be broadcasted to other members in the network.
+* Each member of the network agrees on the protocol of the longest valid cheese-stack.
+* The member program accepts and shares information (download and upload) at the same time.
+* If a member creates new [cheese](#cheese), it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it a valid cheese. 
 
 ## Interaction Between Tracker and Member Programs
 * A tracker-member connection is a TCP connection

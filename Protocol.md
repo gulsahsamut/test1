@@ -106,9 +106,9 @@
 ## Data-Format
 | Contents | Data-Format |
 | ---------|---------|
-| Parent_Smell | String(20 bytes)|
+| Parent_Smell | String (20 bytes)|
 | Sequence_Number | Integer (4 bytes) |
-| Smell | String(20 Bytes) |
+| Smell | String (20 bytes) |
 | Unit_of_Information | String (Variable Length)|
 | Nonce | Integer (4 bytes) |
 | IP_Address | String (4 bytes) |

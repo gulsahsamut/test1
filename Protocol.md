@@ -15,6 +15,7 @@
 6. [Cheese](#cheese)
 7. [Cheese-Stack](#cheese-stack)
 8. [Proof-Of-Work](#proof-of-work)
+9. [Data-Format](#data-format)
 
 ## Tracker Program
 * A tracker is a server in this peer to peer network.

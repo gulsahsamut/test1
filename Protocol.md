@@ -106,10 +106,10 @@
 ## Data-Format
 | Contents | Data-Format |
 | ---------|---------|
-| Parent_Smell | String(20 Bytes)|
-| Sequence_Number | Integer |
+| Parent_Smell | String(20 bytes)|
+| Sequence_Number | Integer (4 bytes) |
 | Smell | String(20 Bytes) |
-| Unit_of_Information | String |
-| Nonce | Integer |
-| IP_Address | String (4 Bytes) |
-| Port_Number | Integer (2 Bytes) |
+| Unit_of_Information | String (Variable Length)|
+| Nonce | Integer (4 bytes) |
+| IP_Address | String (4 bytes) |
+| Port_Number | Integer (2 bytes) |

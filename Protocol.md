@@ -1,6 +1,8 @@
 # Peer to Peer BlockChain Protocol
 
-**This is the protocol for the implementation of peer to peer blockchain with proof-of-work.The building blocks of the protocol includes the following elements.**
+**This is the protocol for the implementation of peer to peer blockchain with proof-of-work.
+The goal of the project is to implement a blockchain peer-to-peer system inspired by Bitcoin called CheeseCoin System.
+The building blocks of the protocol includes the following elements.**
 
 # Table of contents
 1. [Tracker Program](#tracker-program)

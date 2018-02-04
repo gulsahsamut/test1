@@ -44,12 +44,13 @@
 			* Member IP address.
 			* Member port number.
 			* Total number of active connections.
-* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members.
+* Member requests tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members.
 
 ```sh
 	Request: [IP address, Port number]
 	Response: [Member IP address, Port number]
 ```
+
 * Tracker removes the members from its list if the members are inactive. 
 
 ## Interaction Between Members
@@ -101,5 +102,13 @@
 * It is a procedure to validate a cheese upon previous valid cheese in the cheese-stack.
 * This process is carried out by finding a correct nonce for the unit_of_information in the cheese so that the hash of the smell starts with 00 (two zeros).
 
-
-
+## Data-Format
+| Contents | Data-Format |
+| ---------|---------|
+| Parent_Smell | String(20 Bytes)|
+| Sequence_Number | Integer |
+| Smell | String(20 Bytes) |
+| Unit_of_Information | String |
+| Nonce | Integer |
+| IP_Address | String (4 Bytes) |
+| Port_Number | Integer (2 Bytes) |

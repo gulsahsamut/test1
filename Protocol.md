@@ -18,7 +18,7 @@
 
 ## Tracker Program
 * A tracker is a server in this peer to peer network.
-* The tracker keeps track of IP address of the active members and their port number
+* The tracker keeps track of IP address of the active members and their port numbers.
 * The  members connect to the tracker with respect to the port number and IP address of the tracker (where the tracker process is actively running).
 * When a new member connects to the tracker, 
 	* Tracker sends a sublist of the other members that are active and waiting for connection to other members. 
@@ -26,9 +26,9 @@
 	* If the number of active members connected to the tracker is greater than 10 then the tracker sends the sublist  that contains at most 10 active members to connect with. 
 
 ## Member Program
-* The member gets a sub-list of the peers from the tracker and it gets connected to them and if someone leaves it will get updated automatically
+* A member gets a sub-list of the peers(other members) from the tracker and it gets connected to them and it will get updated automatically if anyother peers disconnects from the network.
 * Member program will be awaiting for connections from other members
-* Each member has a copy of cheese stack stored in its hard disk
+* Each member has a copy of [cheese-stack](#cheese-stack) stored in its hard disk
 * Member can update the cheese stack after doing the proof of work .which will be broadcasted to other members on the network.
 * Each member of the network agrees on the protocol of the longest valid cheese stack.
 * The member program accept and share information (download and upload) at the same time.

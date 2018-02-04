@@ -29,39 +29,39 @@
 * A member gets a sub-list of the peers(other members) from the tracker and it gets connected to them and it will get updated automatically if anyother peers disconnects from the network.
 * Member program will be awaiting for connections from other members
 * Each member has a copy of [cheese-stack](#cheese-stack) stored in its hard disk.
-* Member can update the cheese-stack after doing the [proof of work](#proof-of-work).which will be broadcasted to other members in the network.
+* Member can update the cheese-stack after doing the [proof-of- work](#proof-of-work).which will be broadcasted to other members in the network.
 * Each member of the network agrees on the protocol of the longest valid cheese-stack.
 * The member program accepts and shares information (download and upload) at the same time.
 * If a member creates new [cheese](#cheese), it has to do the proof of work which includes D**00** (D is the difficulty to find the starting two zeros) to be found at the beginning of the hash it created by using nonce function to make it a valid cheese. 
 
 ## Interaction Between Tracker and Member Programs
-* A tracker-member connection is a TCP connection
-* The Tracker listens to the request for connection from the new members by openning its port to accept new connections and this connection is established when the member connects with the port number and the IP address of the tracker 
+* A tracker-member connection is a TCP connection.
+* The Tracker listens to the request for the connection from the new members by openning its port to accept new connections and this connection is established when a member connects with the port number and the IP address of the tracker.
 	* Display message from the tracker before new connections
 		* Tracker waiting for new connection.
 	* When new member gets connected to the tracker
 		* It displays,
-			* Member IP address
-			* Member port number
-			* Total number of active connections
-* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members
+			* Member IP address.
+			* Member port number.
+			* Total number of active connections.
+* Member request tracker to send a list of active members to get connected with and in response the tracker sends a sub-list of active members.
 
 ```sh
 	Request: [IP address, Port number]
 	Response: [Member IP address, Port number]
 ```
-* Tracker removes the members from its list if the members are inactive 
+* Tracker removes the members from its list if the members are inactive. 
 
 ## Interaction Between Members
-* The members gets the sublist from the tracker and connects to the members and their connection is established through TCP connection
+* Each member gets a sublist from the tracker and it connects to other members and their connection is established through TCP connection.
 * Member requests for a the cheese to other member
 ```sh
 	Request: [Cheese]
 	Response: [Parent_Smell,Sequence_Number,Smell,Unit_of_Information,Nonce]
 ```
-* A new member gets a copy of the latest valid cheese stack and it gets stored in the hard disk.
+* A new member gets a copy of the latest valid cheese and it gets stored in the hard disk.
 * The valid cheese is added to the cheese stack and this cheese stack is validated by the inbuilt function in member program and only longest cheese stack is valid as a global protocol to be followed.
-* The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every member that doesn’t have the latest copy of cheese stack.
+* The member program has a synchronising function that checks the number of the cheeses in the cheese-stack of each member and synchronise it to every other member that doesn’t have the latest copy of cheese stack.
 
 ## Blue-Cheese
 * It is the original cheese with following contents,

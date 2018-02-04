@@ -68,26 +68,26 @@
 
 | Contents | Meaning |
 | ---------|---------|
-| Sequence | 0 as predefined value |
+| Sequence_Number | 0 as predefined value |
 | Smell | SHA1 hash generated from the unit of information|
-| Unit_of_Information | Information about the transaction of cheese-coin system |
+| Unit_of_Information | Information about the transaction of CheeseCoin system |
 | Nonce | Random number to validate the cheese, which generates the smell starting with two zeros |
 
 ## Cheese
-* It is a unit of information stored in a distributed database and which is shared between the members in the network
-* A cheese contents following Information,
+* It is a unit of information stored in a distributed database and which is shared between the members in the network.
+* A cheese contents following information,
 
 | Contents | Meaning |
 | ---------|---------|
 | Parent_Smell | The hash of the parent chesse or the smell of the previous cheese|
 | Sequence_Number | Unique number representing the number of ancestors |
 | Smell | SHA1 hash generated from the unit of information |
-| Unit_of_Information | Information about the transaction of cheese-coin system |
+| Unit_of_Information | Information about the transaction of CheeseCoin system |
 | Nonce | Random number to validate the cheese, which generates the smell starting with two zeros |
 
 ## Cheese-Stack
-* It is a collection of Cheese items
-* Chees Stack can be represented as follows,
+* It is a collection of Cheese items.
+* Cheese Stack can be represented as follows,
 
 | Cheese_Stack |
 |--------------|
@@ -98,8 +98,8 @@
 | Cheese_n |
 
 ## Proof-Of-Work
-* It is a procedure to validate a cheese upon previous valid cheese in the cheese-stack
-* This process is carried out by finding a correct nonce for the unit_of_information in the cheese so that the hash of the smell starts with 00 (two zeros)
+* It is a procedure to validate a cheese upon previous valid cheese in the cheese-stack.
+* This process is carried out by finding a correct nonce for the unit_of_information in the cheese so that the hash of the smell starts with 00 (two zeros).
 
 
 
